@@ -5,5 +5,37 @@
 }
 
 html {
+  cursor: none;
   overflow: hidden;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  height: 100dvh;
+}
+
+form {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: rgb(68, 68, 68);
+  padding: 12px 14px;
+  color: white;
+  border: 1px solid rgb(117, 117, 117);
+  border-radius: 8px;
+
+  & > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    & > span {
+      min-width: 32px;
+      width: fit-content;
+    }
+  }
+
+  cursor: auto;
 }
